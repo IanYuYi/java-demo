@@ -19,7 +19,7 @@ public class StringRedisTemplateDemo {
         stringRedisTemplate.opsForValue().set("a", "b");
         stringRedisTemplate.opsForHash().put("hash", "a", "b");
         stringRedisTemplate.opsForHash().putAll("hash", new HashMap<>());
-
+        //取全部hash
         Map<Object, Object> a = stringRedisTemplate.opsForHash().entries("a");
 
         String json = objectMapper.writeValueAsString(new User());
