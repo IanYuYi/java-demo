@@ -39,7 +39,7 @@ public class DelayQueueExample {
         }
     }
 
-    //
+
     public static void main(String[] args) throws InterruptedException {
         DelayQueue<DelayedElement> delayQueue = new DelayQueue<>();
         delayQueue.put(new DelayedElement(5)); // 放入一个延迟5秒到期的元素
