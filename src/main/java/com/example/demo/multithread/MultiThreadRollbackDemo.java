@@ -6,6 +6,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+/**
+ * 所有线程执行完毕，在判断回滚
+ */
 public class MultiThreadRollbackDemo {
 
     private static final int NUM_THREADS = 3;
