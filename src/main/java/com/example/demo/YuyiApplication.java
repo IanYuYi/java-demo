@@ -5,10 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.ConcurrentLinkedDeque;
 
 @SpringBootApplication
 @RestController
@@ -20,6 +18,8 @@ public class YuyiApplication {
         List<String> arrayList = new ArrayList<>();
 
         arrayList.stream().map(x -> "".equals(x)).findAny().orElse(null);
+
+        LinkedList linkedList = new LinkedList();
 
         return "hello world!";
     }

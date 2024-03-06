@@ -13,7 +13,7 @@ public class KafkaConsumerDemo {
         Properties properties = new Properties();
         properties.put("bootstraps.servers", "model.itcast.cn:9092");
         //消费者组（可以用消费者组将若干个消费者组织在一起），共同消费kafka中的数据
-        //每个消费者需要指定一个消费者组，如果消费者的组名是一样的，表示这几个消费者是一个组中的
+        //每个消费者需要指定一个消费者组，如果消费者的组名是一样的，表示这几个消费者是一个组中的.
         properties.put("group.id", "test");
         //自动提交offset
         properties.put("enable.auto.commit", "true");
